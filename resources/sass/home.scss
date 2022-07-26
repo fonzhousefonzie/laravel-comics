@@ -1,5 +1,5 @@
 //
-
+/* _cards-banner */
 .cards-sections-container {
     background-color: #2f2f2f;
 
@@ -60,3 +60,54 @@
         }
     }
 }
+
+/* _blue-banner */
+
+.blue-section{
+    background-color: #3f7ef8;
+    color: whitesmoke;
+
+    .container ul{ margin-bottom: 0;
+        li a{
+        align-items: center;
+        gap: 0.5rem;
+
+        img{
+            max-height: 70px;
+            max-width: 60px;
+            align-self: center;
+        }
+
+        p{
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
+
+        &:hover{
+            color: rgba(255,255,255,0.7);
+        }
+    }}
+}
+
+/* _bannerCTA */
+
+
+    .cta{
+        background-color: #2f2f2f;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+        .sign-up{
+            padding: 0.5rem;
+            border: 2px solid #3f7ef8;
+            text-decoration: none;
+            color: white;
+        }
+    
+        .follow{
+            color: #3f7ef8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }

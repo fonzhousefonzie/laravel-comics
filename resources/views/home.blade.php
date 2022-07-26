@@ -8,4 +8,6 @@
 
 @section('main_content')
     @include('partials.home._cards-banner')
+    @include('partials.home._blue-banner')
+    @include('partials.home._bannerCTA')
 @endsection

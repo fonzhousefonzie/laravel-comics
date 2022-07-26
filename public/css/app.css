@@ -63,6 +63,59 @@
   background: #3f7ef8;
 }
 
+/* _blue-banner */
+
+.blue-section {
+  background-color: #3f7ef8;
+  color: whitesmoke;
+}
+
+.blue-section .container ul {
+  margin-bottom: 0;
+}
+
+.blue-section .container ul li a {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blue-section .container ul li a img {
+  max-height: 70px;
+  max-width: 60px;
+  align-self: center;
+}
+
+.blue-section .container ul li a p {
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.blue-section .container ul li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* _bannerCTA */
+
+.cta {
+  background-color: #2f2f2f;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.cta .sign-up {
+  padding: 0.5rem;
+  border: 2px solid #3f7ef8;
+  text-decoration: none;
+  color: white;
+}
+
+.cta .follow {
+  color: #3f7ef8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* MAIN */
 
 body {
