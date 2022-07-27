@@ -7,37 +7,41 @@ $sitesLinks = ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa'];
 
 
 <footer class="section">
-    <div class="container d-flex text-start gap-4 text-light py-4">
-        <div>
-            <h4>DC COMICS</h4>
-            <ul class="list-unstyled">
-                @foreach ($comicsLinks as $link)
-                <li>{{ $link }}</li>
-                @endforeach
-            </ul>
+    <div class="container text-start text-light py-4">
+        <div class="d-flex gap-4">
+            <div>
+                <h4>DC COMICS</h4>
+                <ul class="list-unstyled">
+                    @foreach ($comicsLinks as $link)
+                        <li>{{ $link }}</li>
+                    @endforeach
+                </ul>
 
-            <h4>SHOP</h4>
-            <ul class="list-unstyled">
-                @foreach ($shopLinks as $link)
-                <li>{{ $link }}</li>
-                @endforeach
-            </ul>
+                <h4>SHOP</h4>
+                <ul class="list-unstyled">
+                    @foreach ($shopLinks as $link)
+                        <li>{{ $link }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            <div>
+                <h4>DC</h4>
+                <ul class="list-unstyled">
+                    @foreach ($DCLinks as $link)
+                        <li>{{ $link }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            <div>
+                <h4>SITES</h4>
+                <ul class="list-unstyled">
+                    @foreach ($sitesLinks as $link)
+                        <li>{{ $link }}</li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
-        <div>
-            <h4>DC</h4>
-            <ul class="list-unstyled">
-                @foreach ($DCLinks as $link)
-                <li>{{ $link }}</li>
-                @endforeach
-            </ul>
-        </div>
-        <div>
-            <h4>SITES</h4>
-            <ul class="list-unstyled">
-                @foreach ($sitesLinks as $link)
-                <li>{{ $link }}</li>
-                @endforeach
-            </ul>
-        </div>
+        <p>All site content TM and &copy; 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved.<br>
+        <a href="#">Cookies Settings</a></p>
     </div>
 </footer>

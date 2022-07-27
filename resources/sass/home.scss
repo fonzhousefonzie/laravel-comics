@@ -1,7 +1,10 @@
 //
 /* _cards-banner */
+:root{
+    --section-container-bg: #2f2f2f;
+}
 .cards-sections-container {
-    background-color: #2f2f2f;
+    background-color: var(--section-container-bg);
 
     .cards-jumbo {
         height: 300px;

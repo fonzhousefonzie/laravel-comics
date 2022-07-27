@@ -1,83 +1,102 @@
 //
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300%3b0,400%3b0,700%3b1,300%3b1,400%3b1,700&display=swap');
 /* PAGES */
 @import "home.scss";
+@import "comic.scss";
 
 /* MAIN */
-body{
-  font-family: 'Roboto Condensed', sans-serif;
-  text-align: center;
+:root {
+    --primary-color: #3f72f8;
 }
 
-a{
-  color: unset;
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
 }
 
-button.primary{
-  display: inline-block;
-  background-color: #3f7ef8;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: whitesmoke;
-  border: none;
-  padding: 0.5rem 3rem;
+a {
+    color: unset;
+}
 
-  &:hover{
-    background-color: #588fff;
-  }
+button.primary {
+    display: inline-block;
+    background-color: #3f7ef8;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border: none;
+    padding: 0.5rem 3rem;
+
+    &:hover {
+        background-color: #588fff;
+    }
 }
 
 /* HEADER */
-header{
-    .brand{
-        
-        img{
+header {
+    .brand {
+
+        img {
             max-height: 70px;
         }
     }
 
-    ul{ 
+    ul {
         margin-bottom: 0;
-        li a{
-        color: rgb(33,37,41);
-        height: 100% !important;
-        position: relative;
 
-        &:hover{
-            color: #3f7ef8;
+        li a {
+            color: rgb(33, 37, 41);
+            height: 100% !important;
+            position: relative;
 
-            .hover-border{
-                display: block;
+            &:hover {
+                color: #3f7ef8;
+
+                .hover-border {
+                    display: block;
+                }
+            }
+
+            .hover-border {
+                width: 100%;
+                height: 6px;
+                position: absolute;
+                bottom: -50px;
+                left: 0;
+                background-color: #3f7ef8;
+                display: none;
             }
         }
-
-        .hover-border{
-            width: 100%;
-            height: 6px;
-            position: absolute;
-            bottom: -50px;
-            left: 0;
-            background-color: #3f7ef8;
-            display: none;
-        }
-    }}
+    }
 }
 
 /* FOOTER */
-footer.section{
+footer.section {
     background: url("../../public/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 90px;
-    
-    h4{
-        font-weight: bold;
-    }
-    
-    li{
+
+    .container {
+        background: url('../../public/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: right;
         color: grey;
+        h4 {
+            font-weight: bold;
+        }
+
+        li, p {
+            color: grey;
+        }
+
+        a{
+            color: var(--primary-color);
+            text-decoration: none;
+        }
     }
 }

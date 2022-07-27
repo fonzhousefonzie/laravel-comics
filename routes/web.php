@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('partials.home.index');
+})->name('home');
+
+Route::get('/{id}', function ($id) {
+    $comics = config('comics');
+    $foundcomic = null;
+    foreach ($comics as $i => $comic) {
+        if ($comic['id'] === intval($id)) {
+            $foundcomic = $comic;
+            break;
+        }
+    }
+    if(is_null($foundcomic)){
+        abort("404");
+    }
+    return view("partials.home._comic", [
+        "comic" => $foundcomic
+    ]);
+})->name('home.comic');
