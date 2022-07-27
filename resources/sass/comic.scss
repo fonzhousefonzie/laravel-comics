@@ -1,7 +1,6 @@
 //
-
-:root {
-    --section-container-bg: #fff;
+.cards-sections-container.comic{
+    background-color: #fff;
 }
 
 .comic-head {
@@ -97,8 +96,10 @@
     .container {
         .row {
             padding-bottom: 5rem;
+            width: 100%;
 
             .col {
+                width: 50%;
                 h5 {
                     font-weight: bold;
                     padding: 1.5rem 0;

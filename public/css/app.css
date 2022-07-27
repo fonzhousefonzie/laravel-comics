@@ -122,8 +122,8 @@
   font-weight: bold;
 }
 
-:root {
-  --section-container-bg: #fff;
+.cards-sections-container.comic {
+  background-color: #fff;
 }
 
 .comic-head {
@@ -216,6 +216,11 @@
 
 .comic-specs .container .row {
   padding-bottom: 5rem;
+  width: 100%;
+}
+
+.comic-specs .container .row .col {
+  width: 50%;
 }
 
 .comic-specs .container .row .col h5 {
@@ -310,6 +315,7 @@ body {
 
 a {
   color: unset;
+  text-decoration: none;
 }
 
 button.primary {

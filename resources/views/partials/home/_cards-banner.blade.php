@@ -13,13 +13,12 @@
             <div class="row">
                 @foreach ($comics as $comic)
                 <div class="col col-6 col-sm-4 col-md-2"> 
-                    {{-- @click="active(i)" :class="{active : comic.isActive}" --}}
-                    <div class="comic-card">
+                    <a class="comic-card" href="{{$comic['id']}}">
                         <div class="thumb-container">
                             <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                         </div>
                         <p>{{ $comic['title'] }}</p>
-                    </div>
+                    </a>
                 </div>
                 @endforeach
             </div>

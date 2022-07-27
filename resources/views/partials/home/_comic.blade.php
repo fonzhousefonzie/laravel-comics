@@ -7,7 +7,7 @@
 @endsection
 
 @section('main_content')
-    <div class="cards-sections-container">
+    <div class="cards-sections-container comic">
         <div class="cards-jumbo">
             <div class="container">
             </div>
