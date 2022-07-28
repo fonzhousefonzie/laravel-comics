@@ -37,7 +37,7 @@
             </div>
             <div class="ad">
                 <p class="text-end fw-bold text-uppercase">ADVERTISEMENT</p>
-                <img src="{{ asset('img/adv.jpg') }}">
+                <img src="{{ asset('img/side-img.jpg') }}">
             </div>
         </div>
         <div class="comic-specs">

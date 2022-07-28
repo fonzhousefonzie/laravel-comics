@@ -48,6 +48,7 @@
 .comic-details {
     .details {
         font-weight: bold;
+        padding-right: 4rem;
 
         .availability {
             div {
@@ -73,6 +74,11 @@
             .price {
                 width: 75%;
                 border-right: 1px solid #529055;
+            }
+
+            .check{
+                flex-grow: 1;
+                text-align: center;
             }
         }
 
